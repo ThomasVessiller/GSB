@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /** 
  * Fonctions pour l'application GSB
  
@@ -19,11 +19,13 @@ function estConnecte(){
  * @param $id 
  * @param $nom
  * @param $prenom
+ * @param $ID_Categ
  */
-function connecter($id,$nom,$prenom){
+function connecter($id,$nom,$prenom,$ID_Categ){
 	$_SESSION['idVisiteur']= $id; 
 	$_SESSION['nom']= $nom;
 	$_SESSION['prenom']= $prenom;
+    $_SESSION['ID_Categ']= $ID_Categ;
 }
 /**
  * Détruit la session active

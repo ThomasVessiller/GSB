@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 if(!isset($_REQUEST['action'])){
 	$_REQUEST['action'] = 'demandeConnexion';
 }
@@ -21,7 +21,8 @@ switch($action){
 			$id = $visiteur['id'];
 			$nom =  $visiteur['nom'];
 			$prenom = $visiteur['prenom'];
-			connecter($id,$nom,$prenom);
+            $ID_Categ = $visiteur['$ID_Categ'];
+			connecter($id,$nom,$prenom,$ID_Categ);
 			include("vues/v_sommaire.php");
 		}
 		break;

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /** 
  * Classe d'accès aux données. 
  
@@ -297,5 +297,13 @@ class PdoGsb{
 		where FicheFrais.idVisiteur ='$idVisiteur' and FicheFrais.mois = '$mois'";
 		PdoGsb::$monPdo->exec($req);
 	}
+
+    public function getCategVisiteur($idVisiteur){
+        $categ = "select CategorieVisiteur.libelle
+                from CategorieVisiteur,Visiteur
+                where Visiteur.id ='$idVisiteur' and Visiteur.ID_Categ = CategorieVisiteur.ID" ;
+        return $categ;
+        PdoGsb::$monPdo->exec($categ);
+    }
 }
 ?>

@@ -1,4 +1,4 @@
-﻿    <!-- Division pour le sommaire -->
+    <!-- Division pour le sommaire -->
     <div id="menuGauche">
      <div id="infosUtil">
     
@@ -10,7 +10,7 @@
         <ul id="menuList">
 			<li >
 				  Visiteur :<br>
-				<?php echo $_SESSION['prenom']."  ".$_SESSION['nom']  ?>
+				<?php echo $_SESSION['prenom']."  ".$_SESSION['nom']."  ".$_SESSION['ID_Categ'] ?>
 			</li>
            <li class="smenu">
               <a href="index.php?uc=gererFrais&action=saisirFrais" title="Saisie fiche de frais ">Saisie fiche de frais</a>
