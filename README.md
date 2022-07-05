@@ -1,5 +1,3 @@
-Test22
+Plateforme GSB
 ======
-
-pour appendre le webdev
-pour aider les uns à aider les autres...
+Plateforme proposé pour passer le BTS SIO
